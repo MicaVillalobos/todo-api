@@ -13,20 +13,20 @@
 
 ## 📋 Índice
 
-- [Descripción](#descripción)
-- [Features](#features)
-- [Entidades](#entidades)
-- [Stack tecnológico](#stack-tecnológico)
-- [Prerequisitos](#prerequisitos)
-- [Cómo correr la app](#cómo-correr-la-app)
-- [Cómo correr los tests](#cómo-correr-los-tests)
-- [Cómo instalar los hooks](#cómo-instalar-los-hooks)
-- [Estándares aplicados](#estándares-aplicados)
-- [Rutas de la API](#rutas-de-la-api)
-- [Variables de entorno](#variables-de-entorno)
-- [Deployment](#deployment)
-- [Areas to improve](#areas-to-improve)
-- [Author](#author)
+- [Descripción](#-descripción)
+- [Features](#-features)
+- [Entidades](#️-entidades)
+- [Stack tecnológico](#️-stack-tecnológico)
+- [Prerequisitos](#-prerequisitos)
+- [Cómo correr la app](#-cómo-correr-la-app)
+- [Cómo correr los tests](#-cómo-correr-los-tests)
+- [Cómo instalar los hooks](#️-cómo-instalar-los-hooks)
+- [Estándares aplicados](#-estándares-aplicados)
+- [Rutas de la API](#️-rutas-de-la-api)
+- [Variables de entorno](#-variables-de-entorno)
+- [Deployment](#️-deployment)
+- [Areas to improve](#-areas-to-improve)
+- [Author](#️-author)
 
 ---
 
