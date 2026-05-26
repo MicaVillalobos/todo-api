@@ -52,3 +52,4 @@ ignore = ["E501"]  # ignoramos líneas muy largas (black las maneja)
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+preview = true
