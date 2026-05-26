@@ -1,0 +1,52 @@
+[project]
+name = "todo-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.18.4",
+    "fastapi[standard]>=0.136.3",
+    "pydantic-settings>=2.14.1",
+    "sqlalchemy>=2.0.50",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.3",
+    "pytest-asyncio>=1.4.0",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.15.14",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["app"]
+omit = ["app/core/database.py"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",   # errores de estilo
+    "F",   # errores de Python (imports sin usar, variables sin usar)
+    "I",   # orden de imports
+    "N",   # convenciones de nombres
+    "UP",  # sugerencias de Python moderno
+]
+ignore = ["E501"]  # ignoramos líneas muy largas (black las maneja)
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
