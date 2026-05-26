@@ -2,8 +2,8 @@
 
 > REST API para gestión de tareas construida con FastAPI, PostgreSQL y Clean Architecture.
 
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/TU_USUARIO/todo-api)
-[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/TU_USUARIO/todo-api)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/MicaVillalobos/todo-api)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/MicaVillalobos/todo-api)
 [![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/docker-ready-2496ED)](https://www.docker.com/)
