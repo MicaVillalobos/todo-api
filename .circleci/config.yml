@@ -4,6 +4,10 @@ jobs:
   test:
     docker:
       - image: cimg/python:3.12
+    environment:
+      DATABASE_URL: sqlite:///./test.db
+      SECRET_KEY: supersecretkeyforcircleci
+      ENV: test
     steps:
       - checkout
 
