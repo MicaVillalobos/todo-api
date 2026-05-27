@@ -126,6 +126,7 @@ Windows:
 ```bash
 docker-compose up --build
 ```
+> 💡 Al levantar con Docker, las migraciones y el seed se ejecutan automáticamente.
 
 La API estará disponible en:
 - **API:** http://localhost:8000
@@ -155,7 +156,12 @@ copy .env.example .env
 uv run alembic upgrade head
 ```
 
-**4. Levantar la app**
+**4. Cargar datos de prueba (opcional)**
+```bash
+uv run python seed.py
+```
+
+**5. Levantar la app**
 ```bash
 uv run fastapi dev main.py
 ```
