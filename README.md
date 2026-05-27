@@ -3,7 +3,7 @@
 > REST API para gestión de tareas construida con FastAPI, PostgreSQL y Clean Architecture.
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/MicaVillalobos/todo-api/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MicaVillalobos/todo-api/tree/main)
-[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/MicaVillalobos/todo-api)
+[![Coverage Status](https://coveralls.io/repos/github/MicaVillalobos/todo-api/badge.svg?branch=main)](https://coveralls.io/github/MicaVillalobos/todo-api?branch=main)
 [![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/docker-ready-2496ED)](https://www.docker.com/)
