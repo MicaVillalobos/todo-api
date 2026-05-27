@@ -211,6 +211,7 @@ uv run pre-commit run --all-files
 - **Pre-commit hooks** — Verificación antes de cada commit
 - **Conventional Commits** — Mensajes de commit estandarizados (`feat:`, `fix:`, `chore:`)
 - **Variables de entorno** — Sin credenciales en el código
+- Se utilizó SQLAlchemy como ORM en modo sincrónico y Alembic para el versionado de migraciones de base de datos.
 
 ---
 

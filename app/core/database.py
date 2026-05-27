@@ -14,7 +14,7 @@ class Base(DeclarativeBase):
 engine = create_engine(settings.DATABASE_URL)
 # crea la conexión a la base de datos usando la URL definida en las variables de entorno
 
-SesionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # Crea una clase de sesión local que se usará para interactuar con la base de datos.
 # autocommit=False para que los cambios no se guarden automáticamente
 # autoflush=False para evitar que se envíen cambios a la base de datos antes de tiempo,
@@ -24,7 +24,7 @@ SesionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
 def get_db():
-    db: Session = SesionLocal()
+    db: Session = SessionLocal()
     try:
         yield db
     finally:
