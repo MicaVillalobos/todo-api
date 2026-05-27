@@ -97,25 +97,33 @@ Para desarrollo local también necesitás:
 
 ### Con Docker (recomendado)
 
+**1. Clonar el repositorio**
 ```bash
-# Mac/Linux — usando el script
-./up_dev.sh
-
-# Windows
-docker-compose up --build
+git clone https://github.com/MicaVillalobos/todo-api.git
+cd todo-api
 ```
 
-# 2. Configurar variables de entorno
-# Mac/Linux:
+**2. Configurar variables de entorno**
+
+Mac/Linux:
+```bash
 cp .env.example .env
+```
 
-# Windows:
+Windows:
+```bash
 copy .env.example .env
+```
 
-# 3. Editar el .env con tus valores
-# El archivo .env.example tiene comentarios explicando cada variable
+**3. Levantar la aplicación**
 
-# 4. Levantar la aplicación
+Mac/Linux:
+```bash
+./up_dev.sh
+```
+
+Windows:
+```bash
 docker-compose up --build
 ```
 
@@ -125,21 +133,30 @@ La API estará disponible en:
 
 ### Sin Docker (desarrollo local)
 
+**1. Instalar dependencias**
 ```bash
-# 1. Instalar dependencias
 uv sync
+```
 
-# 2. Configurar variables de entorno
-# Mac/Linux:
+**2. Configurar variables de entorno**
+
+Mac/Linux:
+```bash
 cp .env.example .env
+```
 
-# Windows:
+Windows:
+```bash
 copy .env.example .env
+```
 
-# 3. Correr migraciones
+**3. Correr migraciones**
+```bash
 uv run alembic upgrade head
+```
 
-# 4. Levantar la app
+**4. Levantar la app**
+```bash
 uv run fastapi dev main.py
 ```
 
@@ -147,14 +164,18 @@ uv run fastapi dev main.py
 
 ## 🧪 Cómo correr los tests
 
+**Instalar dependencias de desarrollo**
 ```bash
-# Instalar dependencias de desarrollo
 uv sync
+```
 
-# Correr tests
+**Correr tests**
+```bash
 uv run pytest tests/ -v
+```
 
-# Correr tests con coverage
+**Correr tests con coverage**
+```bash
 uv run pytest tests/ -v --cov=app --cov-report=term-missing
 ```
 
@@ -164,14 +185,18 @@ uv run pytest tests/ -v --cov=app --cov-report=term-missing
 
 Los hooks verifican automáticamente el código antes de cada commit.
 
+**Instalar dependencias de desarrollo**
 ```bash
-# Instalar dependencias de desarrollo
 uv sync
+```
 
-# Instalar los hooks
+**Instalar los hooks**
+```bash
 uv run pre-commit install
+```
 
-# Verificar manualmente
+**Verificar manualmente**
+```bash
 uv run pre-commit run --all-files
 ```
 
