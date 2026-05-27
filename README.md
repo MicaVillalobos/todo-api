@@ -98,9 +98,12 @@ Para desarrollo local también necesitás:
 ### Con Docker (recomendado)
 
 ```bash
-# 1. Clonar el repositorio
-git clone https://github.com/MicaVillalobos/todo-api.git
-cd todo-api
+# Mac/Linux — usando el script
+./up_dev.sh
+
+# Windows
+docker-compose up --build
+```
 
 # 2. Configurar variables de entorno
 # Mac/Linux:
@@ -213,7 +216,9 @@ Documentación completa disponible en http://localhost:8000/docs
 
 ## 🚢 Deployment
 
-*Próximamente — Railway / Render*
+La API está deployada en Render:
+- **API:** https://todo-api-a9vs.onrender.com
+- **Docs:** https://todo-api-a9vs.onrender.com/docs
 
 ---
 
